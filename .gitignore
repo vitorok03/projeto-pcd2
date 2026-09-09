@@ -1,26 +1,13 @@
-# Dados
-data/raw/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 
-# Python
 __pycache__/
-*.py[cod]
-*.pyo
-
-# Jupyter
+*.pyc
 .ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
 
-# Ambientes virtuais
+.env
 .venv/
-venv/
-env/
-
-# Arquivos do sistema
-.DS_Store
-Thumbs.db
-
-# Arquivos temporários
-*.tmp
-*.temp
-
-# VS Code
-.vscode/
