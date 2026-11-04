@@ -27,12 +27,9 @@ pip install -e .
 
 ## Pipeline (ordem de execução)
 
-1. `notebooks/01_uniao_climatica.ipynb` — lê e agrega os arquivos do INMET (hora -> dia)
-2. `notebooks/02_eda_horaria.ipynb` / `03_eda_diaria.ipynb` — diagnóstico de qualidade
-3. `notebooks/04_soja_sidra_geobr.ipynb` — leitura do SIDRA + join com microrregiões (geobr)
-4. `notebooks/05_join_espacial_microrregioes.ipynb` — estações -> microrregiões
-5. `notebooks/06_agregacao_e_merge_final.ipynb` — agregação temporal/espacial + merge final
-6. `notebooks/07_validacao_base_final.ipynb` — checagens de sanidade da base final
+1. `notebooks/01_analise_exploratoria.ipynb` - análise exploratória dos dados climáticos
+2. `notebooks/02_agregacao_diaria.ipynb` - agregação dos dados climáticos para granularidade diária
+3. `notebooks/03agragacao_inmet_sidra.ipynb` união dos dados climáticos (INMET) e da soja (SIDRA)
 
 ## Dados
 

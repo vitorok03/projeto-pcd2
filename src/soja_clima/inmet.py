@@ -6,6 +6,9 @@ nenhuma execução. Quem chama essas funções com os arquivos de verdade
 """
 import numpy as np
 import pandas as pd
+import os
+import shutil
+import time
 
 # Nomes de coluna em maiúsculo -> nome canônico. A comparação é sempre
 # feita em maiúsculo, o que já resolve variações como
@@ -22,6 +25,17 @@ COLUNAS_CONHECIDAS = {
 
 COLUNAS_ESSENCIAIS = {'data', 'hora', 'precipitacao', 'temperatura', 'temp_max_hora',
                        'temp_min_hora', 'umidade', 'radiacao', 'vento'}
+
+
+def copiar_um_arquivo(origem, destino, tentativas=3):
+    os.makedirs(os.path.dirname(destino), exist_ok=True)
+    for _ in range(tentativas):
+        try:
+            shutil.copy2(origem, destino)
+            return True
+        except Exception:
+            time.sleep(2)
+    return False
 
 
 def normalizar_chave_meta(chave):
