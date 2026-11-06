@@ -1,0 +1,867 @@
+codigo_estacao,CD_MICRO,NM_MICRO,origem
+A001,53001,Brasília,dentro_do_poligono
+A042,53001,Brasília,dentro_do_poligono
+A045,53001,Brasília,dentro_do_poligono
+A046,53001,Brasília,dentro_do_poligono
+A047,53001,Brasília,dentro_do_poligono
+A002,52010,Goiânia,dentro_do_poligono
+A002,52007,Anápolis,substituta_por_centroide
+A003,52015,Meia Ponte,dentro_do_poligono
+A005,52004,Porangatu,dentro_do_poligono
+A011,52018,Quirinópolis,dentro_do_poligono
+A012,52012,Entorno de Brasília,dentro_do_poligono
+A013,52003,Aragarças,dentro_do_poligono
+A014,52002,Rio Vermelho,dentro_do_poligono
+A014,52009,Anicuns,substituta_por_centroide
+A016,52013,Sudoeste de Goiás,dentro_do_poligono
+A017,52011,Vão do Paranã,dentro_do_poligono
+A022,52006,Ceres,dentro_do_poligono
+A023,52013,Sudoeste de Goiás,dentro_do_poligono
+A024,52005,Chapada dos Veadeiros,dentro_do_poligono
+A025,52013,Sudoeste de Goiás,dentro_do_poligono
+A026,52013,Sudoeste de Goiás,dentro_do_poligono
+A027,52014,Vale do Rio dos Bois,dentro_do_poligono
+A028,52008,Iporá,dentro_do_poligono
+A029,52014,Vale do Rio dos Bois,dentro_do_poligono
+A031,52001,São Miguel do Araguaia,dentro_do_poligono
+A032,52005,Chapada dos Veadeiros,dentro_do_poligono
+A033,52016,Pires do Rio,dentro_do_poligono
+A034,52017,Catalão,dentro_do_poligono
+A035,52015,Meia Ponte,dentro_do_poligono
+A036,52012,Entorno de Brasília,dentro_do_poligono
+A037,52016,Pires do Rio,dentro_do_poligono
+A056,52012,Entorno de Brasília,dentro_do_poligono
+A702,50004,Campo Grande,dentro_do_poligono
+A703,50010,Dourados,dentro_do_poligono
+A704,50007,Três Lagoas,dentro_do_poligono
+A704,35016,Andradina,substituta_por_centroide
+A709,50011,Iguatemi,dentro_do_poligono
+A710,50006,Paranaíba,dentro_do_poligono
+A717,50001,Baixo Pantanal,dentro_do_poligono
+A719,50002,Aquidauana,dentro_do_poligono
+A720,50003,Alto Taquari,dentro_do_poligono
+A721,50010,Dourados,dentro_do_poligono
+A722,50009,Bodoquena,dentro_do_poligono
+A723,50001,Baixo Pantanal,dentro_do_poligono
+A724,50001,Baixo Pantanal,dentro_do_poligono
+A730,50005,Cassilândia,dentro_do_poligono
+A731,50010,Dourados,dentro_do_poligono
+A732,50003,Alto Taquari,dentro_do_poligono
+A742,50005,Cassilândia,dentro_do_poligono
+A743,50010,Dourados,dentro_do_poligono
+A750,50010,Dourados,dentro_do_poligono
+A751,50011,Iguatemi,dentro_do_poligono
+A752,50011,Iguatemi,dentro_do_poligono
+A754,50004,Campo Grande,dentro_do_poligono
+A756,50007,Três Lagoas,dentro_do_poligono
+A758,50009,Bodoquena,dentro_do_poligono
+A759,50008,Nova Andradina,dentro_do_poligono
+A760,50005,Cassilândia,dentro_do_poligono
+A761,50003,Alto Taquari,dentro_do_poligono
+A772,50010,Dourados,dentro_do_poligono
+A901,51017,Cuiabá,dentro_do_poligono
+A902,51013,Tangará da Serra,dentro_do_poligono
+A902,51015,Alto Paraguai,substituta_por_centroide
+A903,51005,Arinos,dentro_do_poligono
+A904,51006,Alto Teles Pires,dentro_do_poligono
+A907,51021,Rondonópolis,dentro_do_poligono
+A908,51010,Canarana,dentro_do_poligono
+A909,51022,Alto Araguaia,dentro_do_poligono
+A911,51004,Parecis,dentro_do_poligono
+A911,51001,Aripuanã,dentro_do_poligono
+A912,51019,Primavera do Leste,dentro_do_poligono
+A916,51010,Canarana,dentro_do_poligono
+A919,51001,Aripuanã,dentro_do_poligono
+A923,51019,Primavera do Leste,dentro_do_poligono
+A927,51001,Aripuanã,dentro_do_poligono
+A927,51004,Parecis,dentro_do_poligono
+A928,51005,Arinos,dentro_do_poligono
+A929,51006,Alto Teles Pires,dentro_do_poligono
+A930,51008,Paranatinga,dentro_do_poligono
+A931,51010,Canarana,dentro_do_poligono
+A932,51020,Tesouro,dentro_do_poligono
+A934,51022,Alto Araguaia,dentro_do_poligono
+A935,51013,Tangará da Serra,dentro_do_poligono
+A936,51014,Jauru,dentro_do_poligono
+A937,51012,Alto Guaporé,dentro_do_poligono
+A944,51016,Rosário Oeste,dentro_do_poligono
+A945,51011,Médio Araguaia,dentro_do_poligono
+A946,51007,Sinop,dentro_do_poligono
+A947,51009,Norte Araguaia,dentro_do_poligono
+A948,51006,Alto Teles Pires,dentro_do_poligono
+A949,51004,Parecis,dentro_do_poligono
+A950,51006,Alto Teles Pires,dentro_do_poligono
+A951,51007,Sinop,dentro_do_poligono
+A952,51005,Arinos,dentro_do_poligono
+A953,51003,Colíder,dentro_do_poligono
+A954,51011,Médio Araguaia,dentro_do_poligono
+A955,51006,Alto Teles Pires,dentro_do_poligono
+A956,51010,Canarana,dentro_do_poligono
+A957,51010,Canarana,dentro_do_poligono
+A958,51017,Cuiabá,dentro_do_poligono
+A959,51006,Alto Teles Pires,dentro_do_poligono
+A960,51014,Jauru,dentro_do_poligono
+A961,51014,Jauru,dentro_do_poligono
+A962,51004,Parecis,dentro_do_poligono
+A963,51004,Parecis,dentro_do_poligono
+A964,51001,Aripuanã,dentro_do_poligono
+A965,51001,Aripuanã,dentro_do_poligono
+A966,51018,Alto Pantanal,dentro_do_poligono
+A967,51013,Tangará da Serra,dentro_do_poligono
+A969,51017,Cuiabá,dentro_do_poligono
+A970,51009,Norte Araguaia,dentro_do_poligono
+A104,12004,Rio Branco,dentro_do_poligono
+A108,12001,Cruzeiro do Sul,dentro_do_poligono
+A138,12002,Tarauacá,dentro_do_poligono
+A140,12005,Brasiléia,dentro_do_poligono
+A101,13007,Manaus,dentro_do_poligono
+A110,13011,Boca do Acre,dentro_do_poligono
+A112,13013,Madeira,dentro_do_poligono
+A119,13007,Manaus,dentro_do_poligono
+A120,13007,Manaus,dentro_do_poligono
+A120,13008,Rio Preto da Eva,dentro_do_poligono
+A121,13009,Itacoatiara,dentro_do_poligono
+A123,13010,Parintins,dentro_do_poligono
+A128,13001,Rio Negro,dentro_do_poligono
+A133,13013,Madeira,dentro_do_poligono
+A144,13013,Madeira,dentro_do_poligono
+A242,16001,Oiapoque,dentro_do_poligono
+A244,16003,Macapá,dentro_do_poligono
+A249,16003,Macapá,dentro_do_poligono
+A303,27011,Maceió,dentro_do_poligono
+A323,27003,Santana do Ipanema,dentro_do_poligono
+A323,28001,Sergipana do Sertão do São Francisco,dentro_do_poligono
+A323,27004,Batalha,substituta_por_centroide
+A327,27005,Palmeira dos Índios,dentro_do_poligono
+A353,27006,Arapiraca,dentro_do_poligono
+A353,27007,Traipu,substituta_por_centroide
+A355,27012,São Miguel dos Campos,dentro_do_poligono
+A355,27013,Penedo,substituta_por_centroide
+A371,27002,Alagoana do Sertão do São Francisco,dentro_do_poligono
+A371,27001,Serrana do Sertão Alagoano,substituta_por_centroide
+A401,29021,Salvador,dentro_do_poligono
+A402,29001,Barreiras,dentro_do_poligono
+A404,29001,Barreiras,dentro_do_poligono
+A405,29032,Porto Seguro,dentro_do_poligono
+A406,29020,Santo Antônio de Jesus,dentro_do_poligono
+A408,29011,Itaberaba,dentro_do_poligono
+A412,29011,Itaberaba,dentro_do_poligono
+A413,29012,Feira de Santana,dentro_do_poligono
+A414,29028,Vitória da Conquista,dentro_do_poligono
+A416,29003,Santa Maria da Vitória,dentro_do_poligono
+A424,29009,Irecê,dentro_do_poligono
+A426,29026,Guanambi,dentro_do_poligono
+A428,29008,Senhor do Bonfim,dentro_do_poligono
+A429,29006,Barra,dentro_do_poligono
+A431,29018,Entre Rios,dentro_do_poligono
+A434,29024,Jequié,dentro_do_poligono
+A436,29014,Euclides da Cunha,dentro_do_poligono
+A439,29006,Barra,dentro_do_poligono
+A440,29010,Jacobina,dentro_do_poligono
+A441,29016,Serrinha,dentro_do_poligono
+A442,29014,Euclides da Cunha,dentro_do_poligono
+A447,29032,Porto Seguro,dentro_do_poligono
+A448,29004,Juazeiro,dentro_do_poligono
+A456,29021,Salvador,dentro_do_poligono
+A456,29019,Catu,substituta_por_centroide
+A458,29015,Ribeira do Pombal,dentro_do_poligono
+A472,29017,Alagoinhas,dentro_do_poligono
+A319,23026,Iguatu,dentro_do_poligono
+A319,23021,Sertão de Senador Pompeu,substituta_por_centroide
+A319,23027,Várzea Alegre,substituta_por_centroide
+A319,23028,Lavras da Mangabeira,substituta_por_centroide
+A324,23020,Sertão de Inhamuns,dentro_do_poligono
+A325,23019,Sertão de Quixeramobim,dentro_do_poligono
+A332,23023,Baixo Jaguaribe,dentro_do_poligono
+A347,23029,Chapada do Araripe,dentro_do_poligono
+A347,22014,Pio Ix,substituta_por_centroide
+A368,23002,Ibiapaba,dentro_do_poligono
+A368,23003,Coreaú,substituta_por_centroide
+A369,23019,Sertão de Quixeramobim,dentro_do_poligono
+A203,21002,Aglomeração Urbana de São Luís,dentro_do_poligono
+A203,21003,Rosário,substituta_por_centroide
+A205,21019,Porto Franco,dentro_do_poligono
+A206,21014,Chapadinha,dentro_do_poligono
+A206,21006,Itapecuru Mirim,substituta_por_centroide
+A219,21007,Gurupi,dentro_do_poligono
+A220,21010,Médio Mearim,dentro_do_poligono
+A224,21019,Porto Franco,dentro_do_poligono
+A225,21009,Imperatriz,dentro_do_poligono
+A237,21017,Caxias,dentro_do_poligono
+A237,21015,Codó,substituta_por_centroide
+A237,21016,Coelho Neto,substituta_por_centroide
+A238,21008,Pindaré,dentro_do_poligono
+A255,21008,Pindaré,dentro_do_poligono
+A310,25015,Brejo Paraibano,dentro_do_poligono
+A310,25012,Curimataú Ocidental,substituta_por_centroide
+A310,25013,Curimataú Oriental,substituta_por_centroide
+A310,25014,Esperança,substituta_por_centroide
+A310,25016,Guarabira,substituta_por_centroide
+A310,25018,Itabaiana,substituta_por_centroide
+A313,25017,Campina Grande,dentro_do_poligono
+A320,25022,João Pessoa,dentro_do_poligono
+A320,25021,Sapé,substituta_por_centroide
+A320,25023,Litoral Sul,substituta_por_centroide
+A333,25003,Sousa,dentro_do_poligono
+A333,25002,Cajazeiras,substituta_por_centroide
+A334,25010,Cariri Ocidental,dentro_do_poligono
+A348,25011,Cariri Oriental,dentro_do_poligono
+A352,25020,Litoral Norte,dentro_do_poligono
+A352,24019,Litoral Sul,substituta_por_centroide
+A373,25006,Itaporanga,dentro_do_poligono
+A373,25005,Piancó,substituta_por_centroide
+A373,25007,Serra do Teixeira,substituta_por_centroide
+A301,26017,Recife,dentro_do_poligono
+A301,26014,Vitória de Santo Antão,substituta_por_centroide
+A301,26018,Suape,substituta_por_centroide
+A309,26004,Sertão do Moxotó,dentro_do_poligono
+A309,26007,Vale do Ipanema,substituta_por_centroide
+A322,26011,Garanhuns,dentro_do_poligono
+A322,27008,Serrana dos Quilombos,substituta_por_centroide
+A328,26009,Alto Capibaribe,dentro_do_poligono
+A328,25019,Umbuzeiro,substituta_por_centroide
+A328,26010,Médio Capibaribe,substituta_por_centroide
+A329,26005,Petrolina,dentro_do_poligono
+A341,26008,Vale do Ipojuca,dentro_do_poligono
+A341,26012,Brejo Pernambucano,substituta_por_centroide
+A349,26004,Sertão do Moxotó,dentro_do_poligono
+A350,26003,Pajeú,dentro_do_poligono
+A351,26006,Itaparica,dentro_do_poligono
+A351,29005,Paulo Afonso,substituta_por_centroide
+A357,26015,Mata Meridional Pernambucana,dentro_do_poligono
+A366,26001,Araripina,dentro_do_poligono
+A370,26002,Salgueiro,dentro_do_poligono
+A387,26009,Alto Capibaribe,dentro_do_poligono
+A388,26013,Mata Setentrional Pernambucana,dentro_do_poligono
+A389,26016,Itamaracá,dentro_do_poligono
+A390,26015,Mata Meridional Pernambucana,dentro_do_poligono
+A312,22003,Teresina,dentro_do_poligono
+A330,22015,Alto Médio Canindé,dentro_do_poligono
+A331,22015,Alto Médio Canindé,dentro_do_poligono
+A335,22001,Baixo Parnaíba Piauiense,dentro_do_poligono
+A343,22013,Picos,dentro_do_poligono
+A346,22007,Alto Parnaíba Piauiense,dentro_do_poligono
+A346,22008,Bertolínia,substituta_por_centroide
+A354,22013,Picos,dentro_do_poligono
+A361,22004,Campo Maior,dentro_do_poligono
+A363,22006,Valença do Piauí,dentro_do_poligono
+A365,22011,São Raimundo Nonato,dentro_do_poligono
+A365,22015,Alto Médio Canindé,dentro_do_poligono
+A374,22012,Chapadas do Extremo Sul Piauiense,dentro_do_poligono
+A375,22007,Alto Parnaíba Piauiense,dentro_do_poligono
+A376,22004,Campo Maior,dentro_do_poligono
+A304,24018,Natal,dentro_do_poligono
+A304,24015,Agreste Potiguar,substituta_por_centroide
+A304,24017,Macaíba,substituta_por_centroide
+A316,24011,Seridó Ocidental,dentro_do_poligono
+A316,24012,Seridó Oriental,substituta_por_centroide
+A316,25001,Catolé do Rocha,substituta_por_centroide
+A318,24001,Mossoró,dentro_do_poligono
+A367,24014,Borborema Potiguar,dentro_do_poligono
+A367,25009,Seridó Oriental Paraibano,substituta_por_centroide
+A372,24004,Vale do Açu,dentro_do_poligono
+A372,24003,Médio Oeste,substituta_por_centroide
+A372,24010,Serra de Santana,substituta_por_centroide
+A417,28012,Boquim,dentro_do_poligono
+A417,28006,Agreste de Lagarto,substituta_por_centroide
+A417,28013,Estância,substituta_por_centroide
+A421,28007,Propriá,dentro_do_poligono
+A421,28009,Japaratuba,substituta_por_centroide
+A201,15007,Belém,dentro_do_poligono
+A202,15008,Castanhal,dentro_do_poligono
+A210,15015,Altamira,dentro_do_poligono
+A211,15002,Santarém,dentro_do_poligono
+A212,15017,Paragominas,dentro_do_poligono
+A213,15012,Tomé-Açu,dentro_do_poligono
+A215,15009,Salgado,dentro_do_poligono
+A216,15018,São Félix do Xingu,dentro_do_poligono
+A226,15010,Bragantina,dentro_do_poligono
+A229,15016,Tucuruí,dentro_do_poligono
+A231,15014,Itaituba,dentro_do_poligono
+A234,15018,São Félix do Xingu,dentro_do_poligono
+A235,15016,Tucuruí,dentro_do_poligono
+A239,15002,Santarém,dentro_do_poligono
+A241,15022,Conceição do Araguaia,dentro_do_poligono
+A245,15003,Almeirim,dentro_do_poligono
+A246,15014,Itaituba,dentro_do_poligono
+A248,15013,Guamá,dentro_do_poligono
+A250,15002,Santarém,dentro_do_poligono
+A252,15017,Paragominas,dentro_do_poligono
+A253,15015,Altamira,dentro_do_poligono
+A254,15021,Redenção,dentro_do_poligono
+A256,15022,Conceição do Araguaia,dentro_do_poligono
+A925,11001,Porto Velho,dentro_do_poligono
+A939,11006,Cacoal,dentro_do_poligono
+A009,17006,Porto Nacional,dentro_do_poligono
+A010,17008,Dianópolis,dentro_do_poligono
+A018,17005,Gurupi,dentro_do_poligono
+A020,17006,Porto Nacional,dentro_do_poligono
+A020,17003,Miracema do Tocantins,dentro_do_poligono
+A021,17002,Araguaína,dentro_do_poligono
+A038,17008,Dianópolis,dentro_do_poligono
+A039,17004,Rio Formoso,dentro_do_poligono
+A040,17007,Jalapão,dentro_do_poligono
+A041,17003,Miracema do Tocantins,dentro_do_poligono
+A044,17001,Bico do Papagaio,dentro_do_poligono
+A048,17002,Araguaína,dentro_do_poligono
+A050,17007,Jalapão,dentro_do_poligono
+A052,17008,Dianópolis,dentro_do_poligono
+A052,17006,Porto Nacional,dentro_do_poligono
+A053,17008,Dianópolis,dentro_do_poligono
+A054,17004,Rio Formoso,dentro_do_poligono
+A055,17004,Rio Formoso,dentro_do_poligono
+A612,32009,Vitória,dentro_do_poligono
+A613,32008,Santa Teresa,dentro_do_poligono
+A614,32006,Linhares,dentro_do_poligono
+A616,32005,São Mateus,dentro_do_poligono
+A617,32011,Alegre,dentro_do_poligono
+A617,32012,Cachoeiro de Itapemirim,substituta_por_centroide
+A622,32013,Itapemirim,dentro_do_poligono
+A631,32001,Barra de São Francisco,dentro_do_poligono
+A631,32004,Montanha,substituta_por_centroide
+A632,32003,Colatina,dentro_do_poligono
+A633,32007,Afonso Cláudio,dentro_do_poligono
+A634,32009,Vitória,dentro_do_poligono
+A657,32007,Afonso Cláudio,dentro_do_poligono
+A502,31059,Barbacena,dentro_do_poligono
+A505,31023,Araxá,dentro_do_poligono
+A506,31007,Montes Claros,dentro_do_poligono
+A506,31009,Bocaiúva,substituta_por_centroide
+A507,31018,Uberlândia,dentro_do_poligono
+A508,31014,Almenara,dentro_do_poligono
+A509,31052,Pouso Alegre,dentro_do_poligono
+A510,31062,Viçosa,dentro_do_poligono
+A510,31064,Ubá,substituta_por_centroide
+A511,31039,Ipatinga,dentro_do_poligono
+A511,31031,Itabira,substituta_por_centroide
+A512,31017,Ituiutaba,dentro_do_poligono
+A513,31034,Conselheiro Lafaiete,dentro_do_poligono
+A513,31033,Ouro Preto,substituta_por_centroide
+A514,31058,São João del Rei,dentro_do_poligono
+A514,31057,Lavras,dentro_do_poligono
+A515,31050,Varginha,dentro_do_poligono
+A516,31047,Passos,dentro_do_poligono
+A517,31063,Muriaé,dentro_do_poligono
+A518,31065,Juiz de Fora,dentro_do_poligono
+A519,31021,Frutal,dentro_do_poligono
+A520,31022,Uberaba,dentro_do_poligono
+A521,31030,Belo Horizonte,dentro_do_poligono
+A522,31016,Nanuque,dentro_do_poligono
+A523,31019,Patrocínio,dentro_do_poligono
+A524,31044,Formiga,dentro_do_poligono
+A524,31045,Campo Belo,substituta_por_centroide
+A525,31023,Araxá,dentro_do_poligono
+A526,31003,Januária,dentro_do_poligono
+A526,31004,Janaúba,dentro_do_poligono
+A527,31015,Teófilo Otoni,dentro_do_poligono
+A528,31002,Paracatu,dentro_do_poligono
+A529,31054,São Lourenço,dentro_do_poligono
+A530,31051,Poços de Caldas,dentro_do_poligono
+A531,31056,Itajubá,dentro_do_poligono
+A531,31053,Santa Rita do Sapucaí,substituta_por_centroide
+A532,31037,Governador Valadares,dentro_do_poligono
+A533,31035,Guanhães,dentro_do_poligono
+A533,31028,Conceição do Mato Dentro,substituta_por_centroide
+A534,31041,Aimorés,dentro_do_poligono
+A535,31029,Pará de Minas,dentro_do_poligono
+A536,31026,Bom Despacho,dentro_do_poligono
+A537,31010,Diamantina,dentro_do_poligono
+A538,31025,Curvelo,dentro_do_poligono
+A539,31004,Janaúba,dentro_do_poligono
+A540,31038,Mantena,dentro_do_poligono
+A541,31011,Capelinha,dentro_do_poligono
+A541,31036,Peçanha,substituta_por_centroide
+A542,31001,Unaí,dentro_do_poligono
+A543,31004,Janaúba,dentro_do_poligono
+A544,31001,Unaí,dentro_do_poligono
+A545,31006,Pirapora,dentro_do_poligono
+A546,31002,Paracatu,dentro_do_poligono
+A549,31005,Salinas,dentro_do_poligono
+A550,31013,Pedra Azul,dentro_do_poligono
+A551,31005,Salinas,dentro_do_poligono
+A552,31005,Salinas,dentro_do_poligono
+A553,31002,Paracatu,dentro_do_poligono
+A554,31040,Caratinga,dentro_do_poligono
+A556,31061,Manhuaçu,dentro_do_poligono
+A556,31060,Ponte Nova,substituta_por_centroide
+A557,31065,Juiz de Fora,dentro_do_poligono
+A559,31003,Januária,dentro_do_poligono
+A560,31024,Três Marias,dentro_do_poligono
+A562,31020,Patos de Minas,dentro_do_poligono
+A563,31004,Janaúba,dentro_do_poligono
+A564,31043,Divinópolis,dentro_do_poligono
+A565,31042,Piuí,dentro_do_poligono
+A566,31012,Araçuaí,dentro_do_poligono
+A566,31006,Pirapora,dentro_do_poligono
+A566,31011,Capelinha,dentro_do_poligono
+A566,31008,Grão Mogol,substituta_por_centroide
+A567,31049,Alfenas,dentro_do_poligono
+A568,31022,Uberaba,dentro_do_poligono
+A569,31027,Sete Lagoas,dentro_do_poligono
+A570,31046,Oliveira,dentro_do_poligono
+A571,31002,Paracatu,dentro_do_poligono
+A572,31030,Belo Horizonte,dentro_do_poligono
+F501,31030,Belo Horizonte,dentro_do_poligono
+A601,33017,Itaguaí,dentro_do_poligono
+A602,33018,Rio de Janeiro,dentro_do_poligono
+A603,33018,Rio de Janeiro,dentro_do_poligono
+A604,33002,Santo Antônio de Pádua,dentro_do_poligono
+A604,33001,Itaperuna,substituta_por_centroide
+A606,33010,Lagos,dentro_do_poligono
+A607,33003,Campos dos Goytacazes,dentro_do_poligono
+A608,33004,Macaé,dentro_do_poligono
+A609,33011,Vale do Paraíba Fluminense,dentro_do_poligono
+A609,35052,Bananal,substituta_por_centroide
+A610,33015,Serrana,dentro_do_poligono
+A610,33018,Rio de Janeiro,dentro_do_poligono
+A611,33012,Barra do Piraí,dentro_do_poligono
+A618,33015,Serrana,dentro_do_poligono
+A619,33013,Baía da Ilha Grande,dentro_do_poligono
+A620,33003,Campos dos Goytacazes,dentro_do_poligono
+A621,33018,Rio de Janeiro,dentro_do_poligono
+A624,33007,Nova Friburgo,dentro_do_poligono
+A625,33005,Três Rios,dentro_do_poligono
+A626,33011,Vale do Paraíba Fluminense,dentro_do_poligono
+A627,33018,Rio de Janeiro,dentro_do_poligono
+A628,33013,Baía da Ilha Grande,dentro_do_poligono
+A629,33006,Cantagalo-Cordeiro,dentro_do_poligono
+A629,31066,Cataguases,substituta_por_centroide
+A630,33008,Santa Maria Madalena,dentro_do_poligono
+A636,33018,Rio de Janeiro,dentro_do_poligono
+A637,33014,Vassouras,dentro_do_poligono
+A652,33018,Rio de Janeiro,dentro_do_poligono
+A659,33009,Bacia de São João,dentro_do_poligono
+A659,33016,Macacu-Caceribu,substituta_por_centroide
+A667,33010,Lagos,dentro_do_poligono
+A701,35061,São Paulo,dentro_do_poligono
+A701,35058,Franco da Rocha,substituta_por_centroide
+A701,35059,Guarulhos,substituta_por_centroide
+A705,35020,Bauru,dentro_do_poligono
+A706,35049,Campos do Jordão,dentro_do_poligono
+A707,35036,Presidente Prudente,dentro_do_poligono
+A708,35012,Franca,dentro_do_poligono
+A711,35025,São Carlos,dentro_do_poligono
+A711,35026,Rio Claro,substituta_por_centroide
+A712,35055,Registro,dentro_do_poligono
+A713,35046,Sorocaba,dentro_do_poligono
+A713,35043,Tatuí,dentro_do_poligono
+A714,35041,Itapeva,dentro_do_poligono
+A714,35044,Capão Bonito,substituta_por_centroide
+A715,35045,Piedade,dentro_do_poligono
+A715,35042,Itapetininga,substituta_por_centroide
+A716,35040,Ourinhos,dentro_do_poligono
+A716,41016,Jacarezinho,substituta_por_centroide
+A718,35036,Presidente Prudente,dentro_do_poligono
+A718,35039,Assis,substituta_por_centroide
+A718,41007,Porecatu,substituta_por_centroide
+A725,35022,Avaré,dentro_do_poligono
+A726,35028,Piracicaba,dentro_do_poligono
+A726,35027,Limeira,substituta_por_centroide
+A726,35032,Campinas,substituta_por_centroide
+A727,35019,Lins,dentro_do_poligono
+A728,35050,São José dos Campos,dentro_do_poligono
+A733,35001,Jales,dentro_do_poligono
+A733,35002,Fernandópolis,substituta_por_centroide
+A734,35017,Araçatuba,dentro_do_poligono
+A734,35035,Adamantina,substituta_por_centroide
+A735,35004,São José do Rio Preto,dentro_do_poligono
+A735,35007,Nhandeara,substituta_por_centroide
+A735,35018,Birigui,substituta_por_centroide
+A736,35005,Catanduva,dentro_do_poligono
+A736,35008,Novo Horizonte,substituta_por_centroide
+A737,35024,Araraquara,dentro_do_poligono
+A738,35030,São João da Boa Vista,dentro_do_poligono
+A738,35029,Pirassununga,substituta_por_centroide
+A739,35031,Mogi Mirim,dentro_do_poligono
+A739,35033,Amparo,substituta_por_centroide
+A740,35053,Paraibuna/Paraitinga,dentro_do_poligono
+A741,35021,Jaú,dentro_do_poligono
+A741,35023,Botucatu,substituta_por_centroide
+A744,35048,Bragança Paulista,dentro_do_poligono
+A744,35063,Santos,dentro_do_poligono
+A744,35056,Itanhaém,substituta_por_centroide
+A746,35055,Registro,dentro_do_poligono
+A747,35014,Ribeirão Preto,dentro_do_poligono
+A748,35009,Barretos,dentro_do_poligono
+A753,35011,Ituverava,dentro_do_poligono
+A753,35010,São Joaquim da Barra,substituta_por_centroide
+A755,35057,Osasco,dentro_do_poligono
+A755,35047,Jundiaí,substituta_por_centroide
+A763,35038,Marília,dentro_do_poligono
+A764,35013,Jaboticabal,dentro_do_poligono
+A765,35063,Santos,dentro_do_poligono
+A765,35062,Mogi das Cruzes,substituta_por_centroide
+A766,35055,Registro,dentro_do_poligono
+A768,35037,Tupã,dentro_do_poligono
+A769,35051,Guaratinguetá,dentro_do_poligono
+A770,35014,Ribeirão Preto,dentro_do_poligono
+A771,35061,São Paulo,dentro_do_poligono
+A771,35060,Itapecerica da Serra,substituta_por_centroide
+A807,41037,Curitiba,dentro_do_poligono
+A818,41031,Prudentópolis,dentro_do_poligono
+A819,41021,Ponta Grossa,dentro_do_poligono
+A820,41022,Toledo,dentro_do_poligono
+A821,41018,Wenceslau Braz,dentro_do_poligono
+A822,41013,Ivaiporã,dentro_do_poligono
+A822,41005,Campo Mourão,substituta_por_centroide
+A822,41028,Pitanga,substituta_por_centroide
+A823,41029,Guarapuava,dentro_do_poligono
+A823,41032,Irati,substituta_por_centroide
+A825,41004,Goioerê,dentro_do_poligono
+A835,41009,Maringá,dentro_do_poligono
+A835,41006,Astorga,substituta_por_centroide
+A835,41008,Floraí,substituta_por_centroide
+A835,41010,Apucarana,substituta_por_centroide
+A835,41012,Faxinal,substituta_por_centroide
+A843,41026,Francisco Beltrão,dentro_do_poligono
+A849,41001,Paranavaí,dentro_do_poligono
+A855,41025,Capanema,dentro_do_poligono
+A869,41003,Cianorte,dentro_do_poligono
+A871,41017,Ibaiti,dentro_do_poligono
+A872,41019,Telêmaco Borba,dentro_do_poligono
+A872,41020,Jaguariaíva,substituta_por_centroide
+A873,41038,Paranaguá,dentro_do_poligono
+A874,41034,São Mateus do Sul,dentro_do_poligono
+A874,41036,Lapa,substituta_por_centroide
+A875,41033,União da Vitória,dentro_do_poligono
+A876,41030,Palmas,dentro_do_poligono
+B803,41004,Goioerê,dentro_do_poligono
+B803,41023,Cascavel,substituta_por_centroide
+B804,41029,Guarapuava,dentro_do_poligono
+B806,41037,Curitiba,dentro_do_poligono
+B806,41035,Cerro Azul,substituta_por_centroide
+A801,43026,Porto Alegre,dentro_do_poligono
+A802,43035,Litoral Lagunar,dentro_do_poligono
+A803,43018,Santa Maria,dentro_do_poligono
+A804,43030,Campanha Central,dentro_do_poligono
+A805,43008,Ijuí,dentro_do_poligono
+A809,43029,Campanha Ocidental,dentro_do_poligono
+A811,43033,Pelotas,dentro_do_poligono
+A812,43032,Serras de Sudeste,dentro_do_poligono
+A813,43022,Cachoeira do Sul,dentro_do_poligono
+A826,43029,Campanha Ocidental,dentro_do_poligono
+A827,43031,Campanha Meridional,dentro_do_poligono
+A828,43004,Erechim,dentro_do_poligono
+A829,43015,Vacaria,dentro_do_poligono
+A830,43029,Campanha Ocidental,dentro_do_poligono
+A831,43029,Campanha Ocidental,dentro_do_poligono
+A832,43030,Campanha Central,dentro_do_poligono
+A833,43017,Santiago,dentro_do_poligono
+A834,43027,Osório,dentro_do_poligono
+A836,43034,Jaguarão,dentro_do_poligono
+A837,43013,Soledade,dentro_do_poligono
+A838,43028,Camaquã,dentro_do_poligono
+A839,43010,Passo Fundo,dentro_do_poligono
+A840,43016,Caxias do Sul,dentro_do_poligono
+A844,43015,Vacaria,dentro_do_poligono
+A852,43007,Santo Ângelo,dentro_do_poligono
+A853,43011,Cruz Alta,dentro_do_poligono
+A854,43003,Frederico Westphalen,dentro_do_poligono
+A856,43009,Carazinho,dentro_do_poligono
+A878,43027,Osório,dentro_do_poligono
+A879,43024,Gramado-Canela,dentro_do_poligono
+A880,43015,Vacaria,dentro_do_poligono
+A881,43031,Campanha Meridional,dentro_do_poligono
+A882,43021,Lajeado-Estrela,dentro_do_poligono
+A883,43011,Cruz Alta,dentro_do_poligono
+A884,43026,Porto Alegre,dentro_do_poligono
+A886,43017,Santiago,dentro_do_poligono
+A886,43018,Santa Maria,dentro_do_poligono
+A887,43033,Pelotas,dentro_do_poligono
+A889,43018,Santa Maria,dentro_do_poligono
+A893,43032,Serras de Sudeste,dentro_do_poligono
+A894,43014,Guaporé,dentro_do_poligono
+A897,43015,Vacaria,dentro_do_poligono
+A899,43035,Litoral Lagunar,dentro_do_poligono
+B808,43026,Porto Alegre,dentro_do_poligono
+B809,43026,Porto Alegre,dentro_do_poligono
+B810,43026,Porto Alegre,dentro_do_poligono
+B811,43026,Porto Alegre,dentro_do_poligono
+B812,43025,São Jerônimo,dentro_do_poligono
+B813,43025,São Jerônimo,dentro_do_poligono
+B814,43023,Montenegro,dentro_do_poligono
+B815,43021,Lajeado-Estrela,dentro_do_poligono
+B816,43024,Gramado-Canela,dentro_do_poligono
+B817,43016,Caxias do Sul,dentro_do_poligono
+B818,43016,Caxias do Sul,dentro_do_poligono
+B819,43024,Gramado-Canela,dentro_do_poligono
+B820,43015,Vacaria,dentro_do_poligono
+B821,43032,Serras de Sudeste,dentro_do_poligono
+B822,43022,Cachoeira do Sul,dentro_do_poligono
+B823,43032,Serras de Sudeste,dentro_do_poligono
+B824,43026,Porto Alegre,dentro_do_poligono
+B825,43026,Porto Alegre,dentro_do_poligono
+B826,43034,Jaguarão,dentro_do_poligono
+B827,43031,Campanha Meridional,dentro_do_poligono
+B828,43031,Campanha Meridional,dentro_do_poligono
+B829,43035,Litoral Lagunar,dentro_do_poligono
+B830,43035,Litoral Lagunar,dentro_do_poligono
+B831,43033,Pelotas,dentro_do_poligono
+B832,43027,Osório,dentro_do_poligono
+B833,43011,Cruz Alta,dentro_do_poligono
+B834,43029,Campanha Ocidental,dentro_do_poligono
+B835,43011,Cruz Alta,dentro_do_poligono
+B836,43027,Osório,dentro_do_poligono
+B837,43006,Cerro Largo,dentro_do_poligono
+B838,43011,Cruz Alta,dentro_do_poligono
+B839,43027,Osório,dentro_do_poligono
+B840,43020,Santa Cruz do Sul,dentro_do_poligono
+B841,43027,Osório,dentro_do_poligono
+B842,43009,Carazinho,dentro_do_poligono
+B842,43012,Não-Me-Toque,substituta_por_centroide
+B843,43008,Ijuí,dentro_do_poligono
+B844,43007,Santo Ângelo,dentro_do_poligono
+B845,43002,Três Passos,dentro_do_poligono
+B846,43003,Frederico Westphalen,dentro_do_poligono
+B847,43029,Campanha Ocidental,dentro_do_poligono
+B848,43029,Campanha Ocidental,dentro_do_poligono
+B849,43017,Santiago,dentro_do_poligono
+B850,43029,Campanha Ocidental,dentro_do_poligono
+B851,43029,Campanha Ocidental,dentro_do_poligono
+B852,43018,Santa Maria,dentro_do_poligono
+B853,43031,Campanha Meridional,dentro_do_poligono
+B854,43019,Restinga Seca,dentro_do_poligono
+B855,43030,Campanha Central,dentro_do_poligono
+B856,43015,Vacaria,dentro_do_poligono
+B858,43010,Passo Fundo,dentro_do_poligono
+B859,43021,Lajeado-Estrela,dentro_do_poligono
+B860,43021,Lajeado-Estrela,dentro_do_poligono
+B861,43005,Sananduva,dentro_do_poligono
+B862,43027,Osório,dentro_do_poligono
+A848,42001,São Miguel do Oeste,dentro_do_poligono
+A851,42008,Joinville,dentro_do_poligono
+A860,42009,Curitibanos,dentro_do_poligono
+A861,42011,Rio do Sul,dentro_do_poligono
+A862,42007,São Bento do Sul,dentro_do_poligono
+A862,41039,Rio Negro,substituta_por_centroide
+A863,42014,Ituporanga,dentro_do_poligono
+A864,42006,Canoinhas,dentro_do_poligono
+A865,42010,Campos de Lages,dentro_do_poligono
+A867,42020,Araranguá,dentro_do_poligono
+A868,42013,Itajaí,dentro_do_poligono
+A870,42017,Tabuleiro,dentro_do_poligono
+A870,42015,Tijucas,substituta_por_centroide
+A895,42002,Chapecó,dentro_do_poligono
+A895,43010,Passo Fundo,dentro_do_poligono
+A898,42009,Curitibanos,dentro_do_poligono
+A905,51004,Parecis,dentro_do_poligono
+A968,51009,Norte Araguaia,dentro_do_poligono
+A410,29031,Ilhéus-Itabuna,dentro_do_poligono
+A427,29032,Porto Seguro,dentro_do_poligono
+A437,29031,Ilhéus-Itabuna,dentro_do_poligono
+A438,29030,Valença,dentro_do_poligono
+A446,29029,Itapetinga,dentro_do_poligono
+A358,23024,Médio Jaguaribe,dentro_do_poligono
+A358,23025,Serra do Pereiro,substituta_por_centroide
+A358,24005,Serra de São Miguel,substituta_por_centroide
+A358,24006,Pau dos Ferros,substituta_por_centroide
+A340,24002,Chapada do Apodi,dentro_do_poligono
+A340,24007,Umarizal,substituta_por_centroide
+A043,17007,Jalapão,dentro_do_poligono
+A049,17002,Araguaína,dentro_do_poligono
+A810,43001,Santa Rosa,dentro_do_poligono
+A015,52006,Ceres,dentro_do_poligono
+A749,50010,Dourados,dentro_do_poligono
+A906,51003,Colíder,dentro_do_poligono
+A910,51002,Alta Floresta,dentro_do_poligono
+A913,51004,Parecis,dentro_do_poligono
+A915,51008,Paranatinga,dentro_do_poligono
+A917,51007,Sinop,dentro_do_poligono
+A920,51001,Aripuanã,dentro_do_poligono
+A922,51012,Alto Guaporé,dentro_do_poligono
+A924,51002,Alta Floresta,dentro_do_poligono
+A926,51002,Alta Floresta,dentro_do_poligono
+A933,51021,Rondonópolis,dentro_do_poligono
+A942,51009,Norte Araguaia,dentro_do_poligono
+A943,51009,Norte Araguaia,dentro_do_poligono
+A111,13012,Purus,dentro_do_poligono
+A113,13013,Madeira,dentro_do_poligono
+A117,13006,Coari,dentro_do_poligono
+A124,13010,Parintins,dentro_do_poligono
+A124,13009,Itacoatiara,dentro_do_poligono
+A125,13008,Rio Preto da Eva,dentro_do_poligono
+A125,13007,Manaus,dentro_do_poligono
+A134,13001,Rio Negro,dentro_do_poligono
+A251,16003,Macapá,dentro_do_poligono
+A251,16002,Amapá,substituta_por_centroide
+A356,27009,Mata Alagoana,dentro_do_poligono
+A356,27010,Litoral Norte Alagoano,substituta_por_centroide
+A407,29024,Jequié,dentro_do_poligono
+A415,29002,Cotegipe,dentro_do_poligono
+A418,29007,Bom Jesus da Lapa,dentro_do_poligono
+A423,29004,Juazeiro,dentro_do_poligono
+A425,29023,Seabra,dentro_do_poligono
+A430,29023,Seabra,dentro_do_poligono
+A430,29025,Livramento do Brumado,substituta_por_centroide
+A432,29006,Barra,dentro_do_poligono
+A433,29027,Brumado,dentro_do_poligono
+A443,29008,Senhor do Bonfim,dentro_do_poligono
+A444,29030,Valença,dentro_do_poligono
+A445,29031,Ilhéus-Itabuna,dentro_do_poligono
+A450,29013,Jeremoabo,dentro_do_poligono
+A452,29001,Barreiras,dentro_do_poligono
+A455,29032,Porto Seguro,dentro_do_poligono
+A305,23016,Fortaleza,dentro_do_poligono
+A306,23005,Sobral,dentro_do_poligono
+A306,23004,Meruoca,substituta_por_centroide
+A306,23007,Santa Quitéria,substituta_por_centroide
+A314,23013,Baturité,dentro_do_poligono
+A314,23015,Cascavel,dentro_do_poligono
+A314,23011,Médio Curu,substituta_por_centroide
+A314,23012,Canindé,substituta_por_centroide
+A314,23014,Chorozinho,substituta_por_centroide
+A314,23017,Pacajus,substituta_por_centroide
+A315,23032,Cariri,dentro_do_poligono
+A315,23030,Caririaçu,substituta_por_centroide
+A315,23031,Barro,substituta_por_centroide
+A315,23033,Brejo Santo,substituta_por_centroide
+A339,23023,Baixo Jaguaribe,dentro_do_poligono
+A339,23022,Litoral de Aracati,substituta_por_centroide
+A342,23018,Sertão de Cratéus,dentro_do_poligono
+A342,23006,Ipu,substituta_por_centroide
+A359,23008,Itapipoca,dentro_do_poligono
+A359,23009,Baixo Curu,substituta_por_centroide
+A359,23010,Uruburetama,substituta_por_centroide
+A360,23001,Litoral de Camocim E Acaraú,dentro_do_poligono
+A204,21020,Gerais de Balsas,dentro_do_poligono
+A204,21021,Chapadas das Mangabeiras,substituta_por_centroide
+A207,21011,Alto Mearim E Grajaú,dentro_do_poligono
+A218,21004,Lençóis Maranhenses,dentro_do_poligono
+A221,21011,Alto Mearim E Grajaú,dentro_do_poligono
+A222,21018,Chapadas do Alto Itapecuru,dentro_do_poligono
+A222,21012,Presidente Dutra,substituta_por_centroide
+A223,21020,Gerais de Balsas,dentro_do_poligono
+A321,25004,Patos,dentro_do_poligono
+A321,25008,Seridó Ocidental Paraibano,substituta_por_centroide
+A307,26005,Petrolina,dentro_do_poligono
+A308,22002,Litoral Piauiense,dentro_do_poligono
+A308,21013,Baixo Parnaíba Maranhense,substituta_por_centroide
+A311,22009,Floriano,dentro_do_poligono
+A326,22010,Alto Médio Gurguéia,dentro_do_poligono
+A336,22010,Alto Médio Gurguéia,dentro_do_poligono
+A345,22011,São Raimundo Nonato,dentro_do_poligono
+A364,22010,Alto Médio Gurguéia,dentro_do_poligono
+A317,24008,Macau,dentro_do_poligono
+A317,24009,Angicos,substituta_por_centroide
+A344,24016,Litoral Nordeste,dentro_do_poligono
+A344,24013,Baixa Verde,substituta_por_centroide
+A409,28011,Aracaju,dentro_do_poligono
+A409,28010,Baixo Cotinguiba,substituta_por_centroide
+A453,28001,Sergipana do Sertão do São Francisco,dentro_do_poligono
+A453,28003,Nossa Senhora das Dores,substituta_por_centroide
+A209,15015,Altamira,dentro_do_poligono
+A214,15017,Paragominas,dentro_do_poligono
+A227,15006,Arari,dentro_do_poligono
+A232,15001,Óbidos,dentro_do_poligono
+A232,15020,Marabá,dentro_do_poligono
+A233,15022,Conceição do Araguaia,dentro_do_poligono
+A247,15021,Redenção,dentro_do_poligono
+A938,11007,Vilhena,dentro_do_poligono
+A938,11008,Colorado do Oeste,substituta_por_centroide
+A940,11003,Ariquemes,dentro_do_poligono
+A940,11004,Ji-Paraná,substituta_por_centroide
+A135,14001,Boa Vista,dentro_do_poligono
+A019,17005,Gurupi,dentro_do_poligono
+A051,17004,Rio Formoso,dentro_do_poligono
+A615,32010,Guarapari,dentro_do_poligono
+A547,31006,Pirapora,dentro_do_poligono
+A548,31003,Januária,dentro_do_poligono
+A555,31030,Belo Horizonte,dentro_do_poligono
+A555,31032,Itaguara,substituta_por_centroide
+A561,31048,São Sebastião do Paraíso,dentro_do_poligono
+A561,35015,Batatais,substituta_por_centroide
+A762,35034,Dracena,dentro_do_poligono
+A842,41015,Cornélio Procópio,dentro_do_poligono
+A842,41011,Londrina,substituta_por_centroide
+A842,41014,Assaí,substituta_por_centroide
+A846,41024,Foz do Iguaçu,dentro_do_poligono
+A850,41001,Paranavaí,dentro_do_poligono
+A850,35036,Presidente Prudente,dentro_do_poligono
+B807,43026,Porto Alegre,dentro_do_poligono
+A806,42016,Florianópolis,dentro_do_poligono
+A814,42019,Criciúma,dentro_do_poligono
+A815,42010,Campos de Lages,dentro_do_poligono
+A816,42002,Chapecó,dentro_do_poligono
+A816,41027,Pato Branco,substituta_por_centroide
+A817,42012,Blumenau,dentro_do_poligono
+A845,42010,Campos de Lages,dentro_do_poligono
+A845,42018,Tubarão,dentro_do_poligono
+A857,42001,São Miguel do Oeste,dentro_do_poligono
+A858,42003,Xanxerê,dentro_do_poligono
+A858,42005,Concórdia,substituta_por_centroide
+A859,42004,Joaçaba,dentro_do_poligono
+A866,42018,Tubarão,dentro_do_poligono
+A757,50009,Bodoquena,dentro_do_poligono
+S701,50011,Iguatemi,dentro_do_poligono
+S702,50010,Dourados,dentro_do_poligono
+S703,50004,Campo Grande,dentro_do_poligono
+S704,50009,Bodoquena,dentro_do_poligono
+S705,50007,Três Lagoas,dentro_do_poligono
+S706,50010,Dourados,dentro_do_poligono
+S707,50003,Alto Taquari,dentro_do_poligono
+S708,50010,Dourados,dentro_do_poligono
+S709,50011,Iguatemi,dentro_do_poligono
+S710,50010,Dourados,dentro_do_poligono
+S711,50010,Dourados,dentro_do_poligono
+S712,50010,Dourados,dentro_do_poligono
+S713,50008,Nova Andradina,dentro_do_poligono
+S714,50003,Alto Taquari,dentro_do_poligono
+S715,50007,Três Lagoas,dentro_do_poligono
+S716,50007,Três Lagoas,dentro_do_poligono
+S717,50006,Paranaíba,dentro_do_poligono
+A914,51005,Arinos,dentro_do_poligono
+A921,51009,Norte Araguaia,dentro_do_poligono
+A941,51018,Alto Pantanal,dentro_do_poligono
+A422,29032,Porto Seguro,dentro_do_poligono
+A435,29014,Euclides da Cunha,dentro_do_poligono
+A449,29004,Juazeiro,dentro_do_poligono
+A454,29022,Boquira,dentro_do_poligono
+A217,21004,Lençóis Maranhenses,dentro_do_poligono
+S108,21005,Baixada Maranhense,dentro_do_poligono
+S108,21001,Litoral Ocidental Maranhense,substituta_por_centroide
+A337,22011,São Raimundo Nonato,dentro_do_poligono
+A362,22005,Médio Parnaíba Piauiense,dentro_do_poligono
+A302,,,dentro_do_poligono
+A419,28005,Tobias Barreto,dentro_do_poligono
+A420,28002,Carira,dentro_do_poligono
+A451,28004,Agreste de Itabaiana,dentro_do_poligono
+A451,28008,Cotinguiba,substituta_por_centroide
+A102,12003,Sena Madureira,dentro_do_poligono
+A136,12001,Cruzeiro do Sul,dentro_do_poligono
+A137,12001,Cruzeiro do Sul,dentro_do_poligono
+A109,13004,Juruá,dentro_do_poligono
+A122,13010,Parintins,dentro_do_poligono
+A126,13008,Rio Preto da Eva,dentro_do_poligono
+S103,13007,Manaus,dentro_do_poligono
+S115,13001,Rio Negro,dentro_do_poligono
+S117,13005,Tefé,dentro_do_poligono
+S121,13001,Rio Negro,dentro_do_poligono
+A228,15005,Furos de Breves,dentro_do_poligono
+A228,15004,Portel,substituta_por_centroide
+A230,15019,Parauapebas,dentro_do_poligono
+A236,15011,Cametá,dentro_do_poligono
+A240,15016,Tucuruí,dentro_do_poligono
+A240,15020,Marabá,dentro_do_poligono
+S107,15017,Paragominas,dentro_do_poligono
+S120,15014,Itaituba,dentro_do_poligono
+S101,11002,Guajará-Mirim,dentro_do_poligono
+S104,11007,Vilhena,dentro_do_poligono
+S110,11002,Guajará-Mirim,dentro_do_poligono
+S113,14004,Sudeste de Roraima,dentro_do_poligono
+S114,14001,Boa Vista,dentro_do_poligono
+A623,32002,Nova Venécia,dentro_do_poligono
+A635,33011,Vale do Paraíba Fluminense,dentro_do_poligono
+A635,31055,Andrelândia,substituta_por_centroide
+A729,35003,Votuporanga,dentro_do_poligono
+A729,35006,Auriflama,substituta_por_centroide
+A767,35054,Caraguatatuba,dentro_do_poligono
+A824,41002,Umuarama,dentro_do_poligono
+A847,41038,Paranaguá,dentro_do_poligono
+A808,43027,Osório,dentro_do_poligono
+A841,42004,Joaçaba,dentro_do_poligono
+A377,22005,Médio Parnaíba Piauiense,dentro_do_poligono
+A338,22001,Baixo Parnaíba Piauiense,dentro_do_poligono
+C891,,,dentro_do_poligono
+S105,13003,Alto Solimões,dentro_do_poligono
+S116,13003,Alto Solimões,dentro_do_poligono
+S122,14002,Nordeste de Roraima,dentro_do_poligono

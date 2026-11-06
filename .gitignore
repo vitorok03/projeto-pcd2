@@ -1,13 +1,22 @@
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+# Ambientes virtuais
+venv/
+env/
+.pcd2_env/
 
+# Arquivos do Mac
+.DS_Store
+
+# Python
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-*.egg-info/
-.pytest_cache/
+*.pyo
 
-.env
-.venv/
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados brutos e pesados (recomendo ignorar)
+data/raw/
+dados_clima.csv
+
+# Pastas antigas e backups
+_backup_antigo/
