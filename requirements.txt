@@ -1,8 +1,28 @@
+# --- núcleo / dados ---
 pandas
 numpy
-geopandas
-geobr
-shapely
-matplotlib
+pyarrow
+requests
 tqdm
+
+# --- geoespacial ---
+geopandas
+shapely
+geobr
+duckdb<2          # geobr 2.x quebra com duckdb 2.0 (Relation.fetchone removido)
+rasterio          # solo.py (SoilGrids)
+rasterstats       # solo.py (estatística zonal)
+
+# --- fontes de dados ---
+sidrapy           # notebooks/pipeline/02_processar_soja.ipynb (API do SIDRA)
+
+# --- análise / modelagem / gráficos ---
+matplotlib
+seaborn
+plotly            # src/soja_clima/analise.py
+scikit-learn      # correcoes_filtros (detrending), EDA
+statsmodels       # eda/feature_engineering_e_insights
+
+# --- notebooks / testes ---
+ipykernel
 pytest

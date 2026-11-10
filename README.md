@@ -8,35 +8,48 @@ INMET (estações automáticas) e produção agrícola do SIDRA (Tabela 1612).
 ```
 src/soja_clima/   # lógica reutilizável (sem execução, só definições)
   inmet.py        # leitura e limpeza dos arquivos horários do INMET
+  clima.py        # leitura dos ZIPs do INMET e agregação para diário
   sidra.py        # leitura e preparação da produção de soja (SIDRA)
   geo.py          # join espacial estação -> microrregião (requer geopandas/geobr)
   agregacao.py    # diário -> estação-safra -> microrregião-safra
-  merge.py        # merge final clima + produção
+  solo.py         # estatística zonal do SoilGrids por microrregião
+  pacifico.py     # índices ONI/SOI (NOAA)
+  merge.py        # merge final + filtros, solo e detrending da base de modelagem
   qualidade.py    # diagnósticos: faixas plausíveis, gaps, sequências repetidas
 
-notebooks/        # orquestração e exploração (usam o pacote acima)
-tests/            # testes das funções de src/
-data/             # dados brutos e processados (não versionado, ver .gitignore)
+notebooks/pipeline/  # etapas de aquisição/processamento (01 a 04)
+notebooks/eda/       # análises exploratórias (leem a base final)
+main.ipynb           # orquestrador: gera a base final única
+tests/               # testes das funções de src/
+data/                # dados brutos e processados (não versionado, ver .gitignore)
 ```
 
 ## Instalação
 
 ```bash
+pip install -r requirements.txt
 pip install -e .
 ```
 
 ## Pipeline (ordem de execução)
 
-1. `notebooks/01_analise_exploratoria.ipynb` - análise exploratória dos dados climáticos
-2. `notebooks/02_agregacao_diaria.ipynb` - agregação dos dados climáticos para granularidade diária
-3. `notebooks/03agragacao_inmet_sidra.ipynb` união dos dados climáticos (INMET) e da soja (SIDRA)
+1. `notebooks/pipeline/01_processar_clima.ipynb` — ZIPs do INMET → `data/processed/clima_diario.parquet`
+2. `notebooks/pipeline/02_processar_soja.ipynb` — API do SIDRA (Tabela 1612) → `data/raw/tabela1612.csv`
+3. `notebooks/pipeline/03_processar_solo.ipynb` — rasters do SoilGrids → `data/processed/solo_microrregioes_limpo.parquet`
+4. `notebooks/pipeline/04_processar_pacifico.ipynb` — ONI/SOI da NOAA → `data/processed/pacifico_indices.parquet`
+5. `main.ipynb` (na raiz) — mapeamento estação → microrregião, agregação do clima por safra
+   (fases fenológicas + safra completa; soma por estação e média entre estações), merge com
+   soja, solo e Pacífico, filtros e detrending → **`data/processed/base_final_modelagem.csv`**,
+   a única base final do projeto.
 
 ## Dados
 
-Os arquivos brutos (CSVs do INMET, um por estação/ano; CSV do SIDRA) não
-são versionados. Baixe do [INMET](https://bdmep.inmet.gov.br/) e do
-[SIDRA/IBGE](https://sidra.ibge.gov.br/tabela/1612) e coloque em
-`data/raw/`.
+Os arquivos brutos não são versionados: ZIPs anuais do
+[INMET](https://portal.inmet.gov.br/dadoshistoricos) em `data/raw/inmet/`,
+rasters do [SoilGrids](https://soilgrids.org/) em `data/raw/soil/` e
+`oni_monthly.txt`/`soi_monthly.txt` da [NOAA](https://psl.noaa.gov/data/climateindices/)
+em `data/raw/` (o ONI é baixado automaticamente se faltar). A Tabela 1612 do
+[SIDRA/IBGE](https://sidra.ibge.gov.br/tabela/1612) é baixada pela etapa 02.
 
 ## Testes
 

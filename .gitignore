@@ -1,13 +1,33 @@
+# Dados brutos e processados NÃO são versionados (só os .gitkeep).
+# OBS: alguns intermediários válidos (clima_diario, solo, pacífico,
+# features por estação) ainda estão no index porque os brutos (INMET,
+# SoilGrids) não estão no repo; o .gitignore não afeta arquivos já
+# rastreados -- para parar de versioná-los: git rm --cached <arquivo>.
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+dados_clima.csv
 
+# Python
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
+*.pyo
 *.egg-info/
 .pytest_cache/
 
+# Jupyter
+.ipynb_checkpoints/
+
+# Ambientes virtuais e variáveis
 .env
 .venv/
+venv/
+env/
+.pcd2_env/
+
+# Arquivos do Mac
+.DS_Store
+
+# Pastas antigas e backups
+_backup_antigo/
