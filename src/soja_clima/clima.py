@@ -1,13 +1,15 @@
-import pandas as pd
-import geopandas as gpd
-from shapely.geometry import Point
-import os
-import numpy as np
-import geobr
-import zipfile
-import io
+"""Leitura dos ZIPs anuais do INMET (estações automáticas) e agregação
+horária -> diária. Etapa 01 do pipeline (gera `clima_diario.parquet`).
 
-from .geo import construir_mapa_estacao_microrregiao
+O mapeamento estação -> microrregião NÃO é feito aqui: fica em memória no
+`main.ipynb` (`soja_clima.geo.construir_mapa_estacao_microrregiao`)."""
+import io
+import os
+import zipfile
+
+import numpy as np
+import pandas as pd
+
 
 def carregar_e_agregar_inmet(pasta_zip: str) -> pd.DataFrame:
     """Lê os arquivos ZIP do INMET, calcula métricas agronômicas e agrega para DIÁRIO."""
@@ -144,31 +146,3 @@ def carregar_e_agregar_inmet(pasta_zip: str) -> pd.DataFrame:
     df_final['mes'] = df_final['data'].dt.month
     df_final = df_final[df_final['ano'] >= 2005].copy() #igual ao .parquet og
     return df_final
-
-def realizar_join_espacial_estacoes(df_clima_diario: pd.DataFrame) -> pd.DataFrame:
-    df_estacoes = df_clima_diario[['codigo_estacao', 'VL_LATITUDE', 'VL_LONGITUDE']].drop_duplicates()
-    geometria = [Point(xy) for xy in zip(df_estacoes['VL_LONGITUDE'], df_estacoes['VL_LATITUDE'])]
-    gdf_estacoes = gpd.GeoDataFrame(df_estacoes, geometry=geometria, crs="EPSG:4326")
-    
-    gdf_micro = geobr.read_micro_region(year=2020)
-    gdf_micro = gdf_micro.to_crs("EPSG:4326")
-        
-    gdf_join = gpd.sjoin(gdf_estacoes, gdf_micro, how="inner", predicate="intersects")
-    return pd.DataFrame(gdf_join.drop(columns='geometry'))
-
-def processar_dados_inmet(caminho_pasta_dados: str) -> tuple:
-    """Pipeline completo de clima: lê, agrega e faz o join espacial com fallback."""
-    print("Lendo e agregando arquivos ZIP do INMET (Otimizado)...")
-    df_diario = carregar_e_agregar_inmet(caminho_pasta_dados)
-    
-    print("Gerando mapa espacial (Estação -> Microrregião) com fallback...")
-    df_mapa = construir_mapa_estacao_microrregiao(df_diario)
-    df_mapa = df_mapa.rename(columns={'code_micro': 'CD_MICRO', 'name_micro': 'NM_MICRO'})
-    
-    # O clima diário não precisa mais das colunas de microrregião (elas ficam no mapa)
-    # Se a função carregar_e_agregar_inmet já criou essas colunas, a gente remove:
-    for col in ['CD_MICRO', 'NM_MICRO']:
-        if col in df_diario.columns:
-            df_diario = df_diario.drop(columns=[col])
-            
-    return df_diario, df_mapa

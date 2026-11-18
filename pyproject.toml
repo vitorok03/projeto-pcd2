@@ -5,6 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "soja-clima"
 version = "0.1.0"
+description = "Previsão do rendimento da soja por microrregião a partir de clima (INMET), solo (SoilGrids) e ENSO (NOAA)."
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "pandas",
@@ -22,5 +24,13 @@ dependencies = [
     "tqdm",
 ]
 
+[project.optional-dependencies]
+pipeline = ["sidrapy"]                                    # notebooks/pipeline/02 (API do SIDRA)
+eda = ["seaborn", "scikit-learn", "statsmodels"]          # notebooks/eda e detrending exploratório
+dev = ["pytest", "ipykernel", "nbformat", "nbclient"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

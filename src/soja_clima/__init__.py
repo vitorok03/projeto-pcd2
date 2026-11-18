@@ -29,20 +29,20 @@ from .qualidade import (
 # `from soja_clima.geo import construir_mapa_estacao_microrregiao`
 # quando for usar o join espacial.
 
-# --- Pipelines da refatoração (clima/soja/solo/pacifico) ------------------
-# Esses módulos dependem de geopandas/geobr/rasterio/requests. Para manter
-# a convenção acima (importar o pacote não exige dependências pesadas),
-# eles são carregados sob demanda: `from soja_clima import processar_dados_inmet`
-# só importa `soja_clima.clima` quando o nome é acessado.
+# --- Etapas de aquisição do pipeline (notebooks/pipeline/01, 03 e 04) -------
+# Esses módulos dependem de rasterio/requests/geobr. Para manter a convenção
+# acima (importar o pacote não exige dependências pesadas), eles são
+# carregados sob demanda: `from soja_clima import processar_dados_soilgrids`
+# só importa `soja_clima.solo` quando o nome é acessado.
+# (A soja é lida por `sidra.ler_sidra_soja`, a partir do CSV gerado pela etapa 02.)
 _PIPELINES_SOB_DEMANDA = {
-    "processar_dados_inmet": "clima",
-    "processar_dados_sidra": "soja",
+    "carregar_e_agregar_inmet": "clima",
     "processar_dados_soilgrids": "solo",
     "processar_indices_noaa": "pacifico",
 }
 
 
-def __getattr__(nome):
+def __getattr__(nome: str) -> object:
     if nome in _PIPELINES_SOB_DEMANDA:
         import importlib
         modulo = importlib.import_module(f".{_PIPELINES_SOB_DEMANDA[nome]}", __name__)

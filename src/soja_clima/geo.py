@@ -8,8 +8,13 @@ Aceita tanto o diário da main (colunas `latitude`/`longitude`, vindo de
 `inmet.ler_e_agregar_diario`) quanto o diário da refatoração (colunas
 `VL_LATITUDE`/`VL_LONGITUDE`, vindo de `clima.carregar_e_agregar_inmet`).
 """
+from __future__ import annotations
+
+from os import PathLike
+
 import geopandas as gpd
 import pandas as pd
+import pyarrow.parquet as pq
 from shapely.geometry import Point
 
 DISTANCIA_MAXIMA_KM = 150  # acima disso, não faz sentido físico atribuir
@@ -21,14 +26,14 @@ _COLUNAS_COORD = {
 }
 
 
-def _achar_coluna(df, alternativas):
+def _achar_coluna(df: pd.DataFrame, alternativas: tuple[str, ...]) -> str:
     for c in alternativas:
         if c in df.columns:
             return c
     raise KeyError(f"Nenhuma das colunas {alternativas} encontrada no diário.")
 
 
-def carregar_microrregioes(ano=2020):
+def carregar_microrregioes(ano: int = 2020) -> gpd.GeoDataFrame:
     """Carrega os polígonos de microrregiões do geobr em EPSG:4326, com
     `code_micro` padronizado como string sem '.0'."""
     import geobr
@@ -37,7 +42,7 @@ def carregar_microrregioes(ano=2020):
     return microrregioes
 
 
-def montar_geodataframe_estacoes(diario):
+def montar_geodataframe_estacoes(diario: pd.DataFrame) -> gpd.GeoDataFrame:
     """Extrai as estações únicas do diário e resolve coordenadas
     divergentes entre arquivos de anos diferentes (deriva de metadado no
     cabeçalho do INMET), usando a mediana."""
@@ -65,7 +70,11 @@ def montar_geodataframe_estacoes(diario):
     return gpd.GeoDataFrame(estacoes, geometry=geometria, crs="EPSG:4326")
 
 
-def construir_mapa_estacao_microrregiao(diario, microrregioes=None, distancia_maxima_km=DISTANCIA_MAXIMA_KM):
+def construir_mapa_estacao_microrregiao(
+    diario: pd.DataFrame,
+    microrregioes: gpd.GeoDataFrame | None = None,
+    distancia_maxima_km: float = DISTANCIA_MAXIMA_KM,
+) -> pd.DataFrame:
     """Pipeline completo: estações -> microrregiões, com os dois
     fallbacks (estação fora de qualquer polígono, e microrregião sem
     nenhuma estação dentro), respeitando um limiar de distância máxima
@@ -148,36 +157,10 @@ def construir_mapa_estacao_microrregiao(diario, microrregioes=None, distancia_ma
     return estacoes_com_micro[['codigo_estacao', 'estacao', 'uf', 'code_micro', 'name_micro', 'origem']]
 
 
-def refazer_join_no_parquet(caminho_clima_parquet, caminho_saida, microrregioes=None):
-    """Refaz o join em cima do parquet já processado (sem reprocessar ZIPs)."""
-    print("Carregando clima_diario.parquet...")
-    df_clima = pd.read_parquet(caminho_clima_parquet)
-    print(f"  {len(df_clima)} linhas, {df_clima['CD_MICRO'].nunique() if 'CD_MICRO' in df_clima.columns else 0} microrregiões cobertas antes.")
-
-    # Remove as colunas antigas de microrregião
-    for c in ['CD_MICRO', 'NM_MICRO']:
-        if c in df_clima.columns:
-            df_clima = df_clima.drop(columns=[c])
-
-    print("Aplicando join espacial com fallbacks...")
-    mapa = construir_mapa_estacao_microrregiao(df_clima, microrregioes)
-    # estacao/uf já existem no diário; o mapa só precisa trazer a microrregião
-    mapa = mapa[['codigo_estacao', 'code_micro', 'name_micro', 'origem']]
-
-    df_clima_novo = df_clima.merge(mapa, on='codigo_estacao', how='left')
-    df_clima_novo = df_clima_novo.rename(columns={'code_micro': 'CD_MICRO', 'name_micro': 'NM_MICRO'})
-
-    print(f"  {df_clima_novo['CD_MICRO'].nunique()} microrregiões cobertas após o fallback.")
-    df_clima_novo.to_parquet(caminho_saida, index=False)
-    print(f"✅ Salvo em {caminho_saida}")
-
-    return df_clima_novo
+_CACHE_MAPA: dict[str, pd.DataFrame] = {}
 
 
-_CACHE_MAPA = {}
-
-
-def mapa_estacoes_cd_micro(clima_diario):
+def mapa_estacoes_cd_micro(clima_diario: pd.DataFrame | str | PathLike) -> pd.DataFrame:
     """Mapa estação -> microrregião gerado EM MEMÓRIA (o mesmo do main.ipynb),
     com as colunas `codigo_estacao`, `CD_MICRO`, `NM_MICRO` e `origem`.
     Aceita o DataFrame do diário ou o caminho do `clima_diario.parquet`
@@ -186,7 +169,7 @@ def mapa_estacoes_cd_micro(clima_diario):
     if chave in _CACHE_MAPA:
         return _CACHE_MAPA[chave].copy()
     if chave is not None:
-        colunas = pd.read_parquet(clima_diario, columns=None).columns
+        colunas = pq.read_schema(clima_diario).names  # só o schema, sem ler os dados
         usar = [c for c in ('codigo_estacao', 'estacao', 'uf', 'latitude', 'longitude',
                             'VL_LATITUDE', 'VL_LONGITUDE') if c in colunas]
         diario = pd.read_parquet(clima_diario, columns=usar)

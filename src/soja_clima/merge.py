@@ -19,6 +19,11 @@ Antes, a refatoração somava todos os dias de todas as estações da
 microrregião, o que multiplicava precipitação, GDD e dias secos pelo
 número de estações (ex.: 13.764 mm/ano, 2.985 dias secos num ano).
 """
+from __future__ import annotations
+
+from os import PathLike
+from typing import Iterable
+
 import numpy as np
 import pandas as pd
 
@@ -48,7 +53,7 @@ _RENOMEAR_CLIMA = {
 }
 
 
-def montar_base_final(clima_micro_safra, producao_micro_ano):
+def montar_base_final(clima_micro_safra: pd.DataFrame, producao_micro_ano: pd.DataFrame) -> pd.DataFrame:
     """Inner join: uma linha só é útil para o modelo se tiver os dois
     lados (clima e produção) para o mesmo (microrregião, ano)."""
     return producao_micro_ano.merge(
@@ -59,12 +64,16 @@ def montar_base_final(clima_micro_safra, producao_micro_ano):
     )
 
 
-def _padronizar_cd_micro(serie):
+def _padronizar_cd_micro(serie: pd.Series) -> pd.Series:
     """'5101.0' / 5101.0 / '5101' -> '5101' (string sem '.0')."""
     return serie.astype(str).str.replace(r'\.0$', '', regex=True).str.strip()
 
 
-def agregar_clima_micro_safra(df_clima, df_mapa, aplicar_limites_fisicos=True):
+def agregar_clima_micro_safra(
+    df_clima: pd.DataFrame,
+    df_mapa: pd.DataFrame,
+    aplicar_limites_fisicos: bool = True,
+) -> pd.DataFrame:
     """Clima diário (formato da refatoração, colunas VL_LATITUDE/VL_LONGITUDE
     ou latitude/longitude) + mapa estação->microrregião (CD_MICRO ou
     code_micro) -> uma linha por (CD_MICRO, ano-safra).
@@ -120,7 +129,7 @@ def agregar_clima_micro_safra(df_clima, df_mapa, aplicar_limites_fisicos=True):
     return micro_safra
 
 
-def agregar_pacifico_safra(df_pacifico, meses=MESES_SAFRA):
+def agregar_pacifico_safra(df_pacifico: pd.DataFrame, meses: Iterable[int] = MESES_SAFRA) -> pd.DataFrame:
     """ONI/SOI mensal -> média na janela da safra, rotulada pelo ano da
     colheita (set-dez contam para o ano seguinte), como em agregacao.ano_safra."""
     p = df_pacifico.copy()
@@ -146,7 +155,7 @@ SOLO_COLUNAS_MANTER = [
 _PREFIXOS_SOLO = ('clay', 'sand', 'silt', 'bdod', 'soc', 'cec', 'phh2o', 'wv0033')
 
 
-def adicionar_solo(base, df_solo):
+def adicionar_solo(base: pd.DataFrame, df_solo: pd.DataFrame) -> pd.DataFrame:
     """Left join do solo estático (SoilGrids, uma linha por microrregião).
     Cria `CD_MICRO` (string) a partir de `code_micro` se ainda não existir."""
     base = base.copy()
@@ -157,14 +166,19 @@ def adicionar_solo(base, df_solo):
     return base.merge(solo, on='CD_MICRO', how='left')
 
 
-def selecionar_colunas_solo(base, manter=SOLO_COLUNAS_MANTER):
+def selecionar_colunas_solo(base: pd.DataFrame, manter: Iterable[str] = SOLO_COLUNAS_MANTER) -> pd.DataFrame:
     """Remove variáveis de solo redundantes (multicolinearidade entre
     camadas de profundidade), mantendo só as da camada 0-5cm em `manter`."""
     solo = [c for c in base.columns if c.startswith(_PREFIXOS_SOLO)]
     return base.drop(columns=[c for c in solo if c not in manter])
 
 
-def filtrar_base_modelagem(base, area_min_ha=100, rendimento_max_kg_ha=6000, ano_min=2009):
+def filtrar_base_modelagem(
+    base: pd.DataFrame,
+    area_min_ha: float = 100,
+    rendimento_max_kg_ha: float = 6000,
+    ano_min: int = 2009,
+) -> pd.DataFrame:
     """Filtros da EDA: área colhida mínima (ruído de áreas pequenas),
     rendimento fisicamente plausível para soja comercial e corte temporal
     (antes de 2009, > 25% do clima ausente). Imprime quantas linhas cada
@@ -182,7 +196,7 @@ def filtrar_base_modelagem(base, area_min_ha=100, rendimento_max_kg_ha=6000, ano
     return base[mascara].copy()
 
 
-def calcular_desvio_clima(base, grau=2):
+def calcular_desvio_clima(base: pd.DataFrame, grau: int = 2) -> pd.DataFrame:
     """Detrending da tendência tecnológica: ajusta um polinômio (grau 2) ao
     rendimento NACIONAL ponderado pela área de cada ano e devolve a base
     com `rendimento_tendencia` e `desvio_clima` (= rendimento nacional do
@@ -219,7 +233,11 @@ COLUNAS_TAXAS_DIARIAS = ('n_dias_validos', 'taxa_chuva_diaria', 'fracao_dias_sec
 COLUNAS_RECALCULADAS_EDA = ('amplitude_media', 'radiacao_media')
 
 
-def carregar_base_final(caminho, nomes_eda=True, descartar=()):
+def carregar_base_final(
+    caminho: str | PathLike,
+    nomes_eda: bool = True,
+    descartar: Iterable[str] = (),
+) -> pd.DataFrame:
     """Lê a base única do projeto (`data/processed/base_final_modelagem.csv`,
     gerada pelo main.ipynb) com `CD_MICRO` como string. Com `nomes_eda=True`
     devolve as colunas de soja com os nomes usados nos notebooks de EDA

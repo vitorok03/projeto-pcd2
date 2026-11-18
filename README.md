@@ -7,7 +7,7 @@ INMET (estações automáticas) e produção agrícola do SIDRA (Tabela 1612).
 
 ```
 src/soja_clima/   # lógica reutilizável (sem execução, só definições)
-  inmet.py        # leitura e limpeza dos arquivos horários do INMET
+  inmet.py        # leitura de um CSV horário do INMET (diagnóstico/análise)
   clima.py        # leitura dos ZIPs do INMET e agregação para diário
   sidra.py        # leitura e preparação da produção de soja (SIDRA)
   geo.py          # join espacial estação -> microrregião (requer geopandas/geobr)
@@ -19,6 +19,7 @@ src/soja_clima/   # lógica reutilizável (sem execução, só definições)
 
 notebooks/pipeline/  # etapas de aquisição/processamento (01 a 04)
 notebooks/eda/       # análises exploratórias (leem a base final)
+notebooks/legado/    # notebooks antigos, fora do pipeline oficial (só referência)
 main.ipynb           # orquestrador: gera a base final única
 tests/               # testes das funções de src/
 data/                # dados brutos e processados (não versionado, ver .gitignore)
@@ -27,9 +28,11 @@ data/                # dados brutos e processados (não versionado, ver .gitigno
 ## Instalação
 
 ```bash
-pip install -r requirements.txt
-pip install -e .
+pip install -e ".[pipeline,eda,dev]"   # pacote soja_clima + extras dos notebooks e testes
 ```
+
+Os notebooks importam o pacote diretamente (`from soja_clima.merge import ...`),
+sem `sys.path`. O `requirements.txt` continua disponível como alternativa.
 
 ## Pipeline (ordem de execução)
 
