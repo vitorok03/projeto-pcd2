@@ -6,6 +6,12 @@ import geobr
 import numpy as np
 import rasterio
 
+ESCALA = {
+    "bdod": 100, "cec": 10, "cfvo": 10, "clay": 10, "sand": 10, "silt": 10,
+    "nitrogen": 100, "ocd": 10, "ocs": 10, "phh2o": 10, "soc": 10,
+    "wv0010": 10, "wv0033": 10, "wv1500": 10,
+}
+
 def processar_dados_soilgrids(pasta_rasters: str) -> pd.DataFrame:
     """Processa múltiplos rasters do SoilGrids e extrai a média por microrregião."""
     
@@ -51,3 +57,42 @@ def processar_dados_soilgrids(pasta_rasters: str) -> pd.DataFrame:
             df_solo[nome_variavel] = np.nan
             
     return df_solo
+
+def processar_dados_soilgrids_completo(pasta_rasters: str) -> pd.DataFrame:
+    print("Carregando mapa de microrregiões do geobr...")
+    gdf_micro = geobr.read_micro_region(year=2020)
+    df_solo = pd.DataFrame({"CD_MICRO": gdf_micro["code_micro"].astype(int).astype(str)})
+
+    arquivos = sorted(f for f in os.listdir(pasta_rasters) if f.endswith(".tif"))
+    print(f"Encontrados {len(arquivos)} rasters.")
+
+    # reprojeta o shapefile uma vez só (todos os rasters têm o mesmo CRS)
+    with rasterio.open(os.path.join(pasta_rasters, arquivos[0])) as src:
+        crs_ref = src.crs
+    gdf_proj = gdf_micro.to_crs(crs_ref)
+
+    for i, raster in enumerate(arquivos, 1):
+        nome = raster.replace(".tif", "")
+        caminho = os.path.join(pasta_rasters, raster)
+        print(f"  [{i}/{len(arquivos)}] {nome}")
+        try:
+            with rasterio.open(caminho) as src:
+                gdf_use = gdf_proj if src.crs == crs_ref else gdf_micro.to_crs(src.crs)
+                nodata = src.nodata if src.nodata is not None else -32768.0
+            stats = zonal_stats(gdf_use, caminho, stats=["mean"], nodata=nodata)
+            df_solo[nome] = [s["mean"] for s in stats]
+        except Exception as e:
+            print(f"     ⚠️ Erro ao processar {raster}: {e}")
+            df_solo[nome] = np.nan
+    return df_solo
+
+
+def converter_unidades(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    for col in df.columns:
+        if col == "CD_MICRO":
+            continue
+        var = col.split("_")[0]
+        if var in ESCALA:
+            df[col] = df[col] / ESCALA[var]
+    return df
